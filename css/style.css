@@ -1,0 +1,435 @@
+@import url(colors.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1070px;
+    margin: 0 auto;
+}
+
+
+
+/*---------------------
+    HOME
+-----------------------*/
+.home{
+    background-image: url(../img/bg-home.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .header{
+    padding: 30px 0;
+}
+
+.home .header .navMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .navMenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .navMenu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+
+}
+
+.home .header .navMenu ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.home .header .navMenu ul li a:hover{
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo{
+    margin: 0 30px;
+}
+
+
+
+/*---------------------
+    HOME-BANNER
+-----------------------*/
+.home .banner{
+    color: white;
+    text-align: center;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home .banner .subtitle{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;    
+}
+
+.home .banner .title{
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.home .banner .subtitle2{
+    padding-bottom: 15px;
+}
+
+
+
+
+
+/*---------------------
+    ABOUT
+-----------------------*/
+.about{
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    padding: 20px;
+    background-image: url(../img/brush-big.jpg);
+    position: relative;
+    top: -50px;
+}
+
+.about .timing .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .icon-cut{
+    width: 50px;
+}
+
+.about .timing h3{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .timing .text{
+    margin: 10px 0;
+}
+
+.about .timing .text::after{
+    content: '•';
+    color: white;
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about .timing .text:last-of-type::after{
+    content: '|';
+}
+
+.about .timing .text h4{
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span{
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+
+/*---------------------
+    ABOUT Experince
+-----------------------*/
+
+
+
+.about .experince{
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experince h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experince h2::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experince .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experince .text p {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+/*---------------------
+    Services
+-----------------------*/
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--bk-color);
+}
+
+.services h2{
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .box{
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .boxes h4{
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.services .box p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*---------------------
+    appointment
+-----------------------*/
+
+.appointment{
+    padding: 100px 0;
+    height: 100vh;
+    background-color: var(--color-primary);
+    background-image: url(../img/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right  bottom;
+    background-size: 300px;
+}
+
+.appointment h2{
+    color: var(--bk-color);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img{
+    margin: 0 auto;
+    display: block;
+}
+
+.appointment form{
+    margin-top: 80px;
+}
+
+.appointment .personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment label{
+    display: block;
+    color: var(--bk-color);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.appointment .input-wrapper{
+    width: 100%;
+    margin-right: 50px;
+
+}
+
+.appointment .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment  textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment  textarea{
+    height: 100px;
+}
+
+.appointment button{
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gallery{
+    padding: 100px 0;
+    background-color: var(--bk-color);
+}
+
+.gallery h2{
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img{
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .gallery-wrapper{
+    display: flex;
+    height: 95vh;
+    flex-flow: column wrap;
+    width: 900px;
+    margin: 50px auto;
+}
+
+
+.gallery .gallery-wrapper div{
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+/*---------------------
+    MAP AND FOOTER
+-----------------------*/
+
+.location {
+    padding: 100px 0;
+    background: url(../img/bg-location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;;
+  }
+  
+  .location .head .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .location .head .info .text span {
+    display: block;
+    font-size: 13px;
+  }
+  
+  .location .head .info .text span:first-child {
+    color: silver;
+  }
+  
+  .location .head .info .text span:last-child {
+    color: white;
+  }
+
+
+  .location .map {
+    width: 100%;
+  }
+
+  .location .map iframe{
+    width: 100%;
+  }
+
+.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
